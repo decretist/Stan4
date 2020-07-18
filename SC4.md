@@ -1,3 +1,11 @@
+---
+bibliography: ../bib/merged.bib
+csl: ../csl/chicago-fullnote-bibliography.csl
+reference-section-title: Bibliography
+suppress-bibliography: true
+title: Chapter 4
+subtitle: Stylometry
+---
 The contemporary audience for Gratian's *Decretum* seems to have been
 reasonably satisfied that a single author was responsible for the
 collection as they knew it, even if they knew so little about the
