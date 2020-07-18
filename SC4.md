@@ -22,7 +22,7 @@ one grandiose thrust, or did the original version go through
 successive redactions? And if the latter, was it Gratian himself, or
 Gratian with his disciples, or an early generation of canonists after
 him, who completed the final recension which from the mid-twelfth
-century on was used in the schools and in adjudging cases?[^1]
+century on was used in the schools and in adjudging cases?[@kuttner_research_1990, 10]
 
 Anders Winroth's 1996 discovery of the first recension of the *Decretum*
 provided a convincing answer to the first part of Kuttner's question:
@@ -51,7 +51,7 @@ personally to Gratian.
 
 Stylometry is the measurement of style. "Style is a property of texts
 constituted by an ensemble of formal features which can be observed
-quantitatively or qualitatively."[^2] While style has both qualitative
+quantitatively or qualitatively."[@herrmann_revisiting_2015, 44] While style has both qualitative
 and quantitative aspects, stylometry is concerned only with quantitative
 aspects of style. One well-established use of stylometry is to attribute
 authorship. And for the purpose of authorship attribution, the formal
@@ -79,7 +79,7 @@ function words are therefore, for all practical purposes, a closed,
 finite, class.
 
 Evidence from experimental psychology suggests that both authors and
-readers process function words at a subconscious level.[^3] The
+readers process function words at a subconscious level.[@kestemont_function_2014] The
 frequency with which a given author uses particular function words is
 therefore considered to be more or less invariant, making it a reliable
 authorial signature.
@@ -104,7 +104,7 @@ American historians, determining that Madison was the author of all 12
 of the disputed numbers.[^5] In 1964, Mosteller and Wallace confirmed
 Adair's findings by conducting a stylometric analysis of the frequencies
 of 70 function words to compare the 12 disputed numbers with numbers
-securely attributed to Hamilton and Madison.[^6]
+securely attributed to Hamilton and Madison.[@mosteller_inference_1964]
 
 ![Federalist](media/image1.jpg){width="6.5in" height="6.5in"}
 
@@ -142,7 +142,7 @@ Instead, for the purpose of the following analyses, the second-recension
 the text of Friedberg's 1879 edition of Gratian's *Decretum* for which
 there is not a one-to-one correspondence to a word in the
 first-recension *dicta* as defined by Anders Winroth's appendix "The
-Contents of the First Recension of Gratian's *Decretum*."[^7] An
+Contents of the First Recension of Gratian's *Decretum*."[@winroth_making_2000, 197-227] An
 alternative restatement would be to define the second-recension *dicta*
 as the difference left by subtracting all of the words of the
 first-recension *dicta* as defined by Winroth's appendix from the text
@@ -191,7 +191,7 @@ is included in the second recension text sample.
 Note that the individual *dicta* are too short for direct analysis by
 the techniques discussed in this chapter.[^9] The smallest unit of Latin
 prose for which computational stylometry works is about 2,500
-words.[^10] The longest first-recension *dictum* (*de Pen*. D.1
+words.[@eder_does_2015, 171] The longest first-recension *dictum* (*de Pen*. D.1
 d.p.c.87) is 1,591 words, and the longest second-recension *dictum* (C.7
 q.1 d.p.c.48) is 692 words. As a result, first and second recension
 samples long enough for analysis have to be created by rolling up or
@@ -212,7 +212,7 @@ Winroth himself acknowledged the provisional nature of his
 appendix.[^12] Furthermore, Pennington has pointed out that although
 Winroth's appendix includes D.100 d.a.c.1, D.100 c.1, and D.101 d.p.c.1,
 in the Paris (P), Florence (Fd), and Barcelona (Bc) manuscripts, the
-text of the first recension ends with D.99 c.1.[^13]
+text of the first recension ends with D.99 c.1.[@pennington_biography_2014, 685]
 
 Nevertheless, in the absence of a critical edition for the first
 recension, applying the variants recorded in Winroth's appendix as a set
@@ -223,7 +223,7 @@ context as an example of "deformance." The term, proposed by Lisa
 Samuels and Jerome McGann in "Deformance and Interpretation" (1999),
 conflates the words "deformation" and "performance", and describes a
 process through which a text is transformed by the application of a
-series of deformances to generate a "paratext".[^15] The paratext is
+series of deformances to generate a "paratext".[@samuels_deformance_1999] The paratext is
 different from the original text, but defined by the deformances through
 which it was generated from it and can be analyzed for otherwise
 unavailable insights into the original text.
@@ -274,7 +274,7 @@ project.[^16]
 As a result, this investigation depends for both the first and the
 second recension on the electronic text of the Friedberg edition that
 Timothy Reuter and Gabriel Silagi used to produce the *Wortkonkordanz
-zum Decretum Gratiani* for the MGH.[^17] Anders Winroth and Lou Burnard
+zum Decretum Gratiani* for the MGH.[@reuter_wortkonkordanz_1990] Anders Winroth and Lou Burnard
 of the Oxford Text Archive (OTA) provided copies of the MGH e-text
 separately. The copies differed significantly, and the e-text had to be
 reconstructed through an editorial process quite similar to preparing a
@@ -335,7 +335,7 @@ resurrexit uera carnis*."[^20]
 Notwithstanding its textual flaws and the highly specialized and
 outdated requirements that constrained the choice of file format, the
 MGH e-text remains a useful tool for the study of Gratian's
-*Decretum*.[^21]
+*Decretum*.[@winroth_uncovering_1997]
 
 The deformance algorithm used to generate the paratexts described in the
 previous section on the definition of the first- and second-recension
@@ -345,7 +345,7 @@ extract the *dicta*. The Oxford Concordance Program (OCP) format in
 which the e-text is encoded is extremely difficult to parse because it
 is not tree-structured---it has start tags for textual elements such as
 canons and *dicta*, cases and distinctions, but not (unlike XML) end
-tags.[^22] The extraction engine captures every element of text between
+tags.[@hockey_history_2004] The extraction engine captures every element of text between
 a *dictum* start tag (`<T A>` or `<T P>`) and the start tag for the next
 element that can possibly follow a *dictum*:
 
@@ -442,7 +442,7 @@ Penitentia* into separate first- and second-recension samples following
 the same procedure used to produce the Gratian1 and Gratian2 samples, as
 a practical matter it is not useful to do so. The only case statement
 (*thema*) for which Winroth's appendix notes a textual difference is
-C.19 d.init.[^23] The first-recension version of the text of C.19
+C.19 d.init.[@winroth_making_2000, 216] The first-recension version of the text of C.19
 d.init. omits a 13-word clause added to the second recension version,
 seemingly for the purpose of piling up descriptive detail. (*unus
 relicta propria ecclesia eo inuito, alter dimissa regulari canonica
@@ -892,7 +892,7 @@ vivid awareness, ahead of its time for the pre-digital age in which he
 lived, of the fact that the variables in the formulas by which he sought
 to express these relationships represent discrete rather than continuous
 quantities.[^29] **Zipf also noted that value of the exponent of b is
-likely to differ from 2 depending on the size of the corpus**[^30]
+likely to differ from 2 depending on the size of the corpus[@zipf_psycho-biology_1935, 43]**
 
 Zipf's final attempt, in 1949, to give a quantitative account of the
 distribution of words in a corpus characterized the distribution in
@@ -1098,7 +1098,7 @@ with which we can compare, for example, the hypothetical case statements
 (*themata*) or second-recension *dicta*.
 
 Although other distance methods of authorship attribution have been
-proposed since,[^35] Burrows's Delta is widely accepted in the scholarly
+proposed since,[@evert_understanding_2017] Burrows's Delta is widely accepted in the scholarly
 literature of the field of computational linguistics, and it will
 therefore be used as the basis for the demonstrations in this section.
 
