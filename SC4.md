@@ -17,7 +17,7 @@ most widely-circulated form, was the product of collective authorship.
 Stephan Kuttner, as the first item on his 1984 agenda for Gratian
 studies, asked:
 
-> was \[the *Concordia discordantium canonum*\] drafted and completed in
+> was [the *Concordia discordantium canonum*] drafted and completed in
 > one grandiose thrust, or did the original version go through
 > successive redactions? And if the latter, was it Gratian himself, or
 > Gratian with his disciples, or an early generation of canonists after
@@ -917,7 +917,7 @@ of the logarithm of the number of occurrences to the number of words is
 linear, with a slope of -1/2 corresponding to the exponent (-1/2) of the
 number of words. (See Figure Zy in the appendix at the end of this
 section for actual data from Gratian's *dicta* for values of *b*
-\[Number of Occurrences\] from 1 to 30. The actual slope is -0.5097,
+[Number of Occurrences] from 1 to 30. The actual slope is -0.5097,
 quite close to the predicted theoretical value of -0.5.)
 
 Similarly, in the equation r × f = C, the frequency *f* varies inversely
