@@ -298,15 +298,15 @@ The MGH e-text introduced a small number of textual errors in addition
 to those it inherited from printed version of Friedberg's edition. The
 table below lists all currently known errors in the MGH e-text:[^19]
 
-  Citation        Column   Error                                           Correction
-  --------------- -------- ----------------------------------------------- -------------------------------------------------------------------
-  D.6 d.p.c.3     11       quantam ad moralem intelligentiam               quantum ad moralem intelligentiam
-  D.23 c.2        79                                                       carnis passione, mortuus uera corporis sui morte, resurrexit uera
-  D.54 d.p.c.22   214      Quid autem serui ecclesiarum                    Quod autem serui ecclesiarum
-  C.2 q.6 c.41    483      contra sententiam restitutionem inpetraverit    contra sententiam restitutionem inpetrauerit
-  C.4 d.init.     536      a communione ait remouendus                     a communione sit remouendus
-  C.4 d.init.     536      in episcoporum indicio                          in episcoporum iudicio
-  C.7 d.init.     566      Quidam longa inualetudinem grauatus episcopus   Quidam longa inualetudine grauatus episcopus
+| Citation      |   Column | Error                                         | Correction                                                        |
+|:--------------|---------:|:----------------------------------------------|:------------------------------------------------------------------|
+| D.6 d.p.c.3   |       11 | quantam ad moralem intelligentiam             | quantum ad moralem intelligentiam                                 |
+| D.23 c.2      |       79 |                                               | carnis passione, mortuus uera corporis sui morte, resurrexit uera |
+| D.54 d.p.c.22 |      214 | Quid autem serui ecclesiarum                  | Quod autem serui ecclesiarum                                      |
+| C.2 q.6 c.41  |      483 | contra sententiam restitutionem inpetraverit  | contra sententiam restitutionem inpetrauerit                      |
+| C.4 d.init.   |      536 | a communione ait remouendus                   | a communione sit remouendus                                       |
+| C.4 d.init.   |      536 | in episcoporum indicio                        | in episcoporum iudicio                                            |
+| C.7 d.init.   |      566 | Quidam longa inualetudinem grauatus episcopus | Quidam longa inualetudine grauatus episcopus                      |
 
 The error in D.23 c.2 is particularly noteworthy. Contrary to the
 widespread belief that the MGH e-text was created by scanning a physical
@@ -535,12 +535,12 @@ the samples:[^24]
     unknown = 'Gratian0'
     counts = get_counts(mfws, [unknown] + samples)
 
-        Gratian0   Gratian1   dePen   Gratian2
-  ----- ---------- ---------- ------- ----------
-  in    74         1450       252     411
-  non   24         1360       270     306
-  et    70         1293       260     345
-  est   13         965        182     167
+|     |   Gratian0 |   Gratian1 |   dePen |   Gratian2 |
+|:----|-----------:|-----------:|--------:|-----------:|
+| in  |         74 |       1450 |     252 |        411 |
+| non |         24 |       1360 |     270 |        306 |
+| et  |         70 |       1293 |     260 |        345 |
+| est |         13 |        965 |     182 |        167 |
 
 After determining the number of occurrences of the MFWs, next, determine
 the length (total word count) for each of the samples:
@@ -554,9 +554,9 @@ the length (total word count) for each of the samples:
 
     lengths = get_lengths([unknown] + samples)
 
-          Gratian0   Gratian1   dePen   Gratian2
-  ------- ---------- ---------- ------- ----------
-  words   3605       56713      10081   14255
+|       |   Gratian0 |   Gratian1 |   dePen |   Gratian2 |
+|:------|-----------:|-----------:|--------:|-----------:|
+| words |       3605 |      56713 |   10081 |      14255 |
 
 Finally, divide the number of occurrences of the MFWs in the samples by
 the sample length and multiply the quotient by 1,000 to determine the
@@ -565,12 +565,12 @@ in each of the samples:
 
     frequencies = (counts / lengths.values) * 1000
 
-        Gratian0   Gratian1   dePen     Gratian2
-  ----- ---------- ---------- --------- ----------
-  in    20.5270    25.5673    24.9975   28.8320
-  non   6.6574     23.9804    26.7831   21.4662
-  et    19.4175    22.7990    25.7911   24.2020
-  est   3.6061     17.0155    18.0538   11.7152
+|     |   Gratian0 |   Gratian1 |   dePen |   Gratian2 |
+|:----|-----------:|-----------:|--------:|-----------:|
+| in  |    20.5270 |    25.5673 | 24.9975 |    28.8320 |
+| non |     6.6574 |    23.9804 | 26.7831 |    21.4662 |
+| et  |    19.4175 |    22.7990 | 25.7911 |    24.2020 |
+| est |     3.6061 |    17.0155 | 18.0538 |    11.7152 |
 
 *In* is the most frequently occurring word in the *dicta*. There are
 1,450 occurrences of *in* out of 56,713 words in the first-recension
@@ -630,12 +630,12 @@ the frequency table representing the four most frequent words:
 
     means = frequencies[samples].mean(axis = 1).to_frame('mean')
 
-        Gratian1   dePen     Gratian2   mean
-  ----- ---------- --------- ---------- ---------
-  in    25.5673    24.9975   28.8320    26.4656
-  non   23.9804    26.7831   21.4662    24.0765
-  et    22.7990    25.7911   24.2020    24.2640
-  est   17.0155    18.0538   11.7152    15.5948
+|     |   Gratian1 |   dePen |   Gratian2 |    mean |
+|:----|-----------:|--------:|-----------:|--------:|
+| in  |    25.5673 | 24.9975 |    28.8320 | 26.4656 |
+| non |    23.9804 | 26.7831 |    21.4662 | 24.0765 |
+| et  |    22.7990 | 25.7911 |    24.2020 | 24.2640 |
+| est |    17.0155 | 18.0538 |    11.7152 | 15.5948 |
 
 We can graph the number of occurrences of *in* and *non* per 1,000 words
 in the *dicta*, with the frequency of *in* plotted along the horizontal
@@ -724,12 +724,12 @@ from them:
 
     standard_deviations = frequencies[samples].std(axis = 1).to_frame('std')
 
-        Gratian1   dePen     Gratian2   mean      std
-  ----- ---------- --------- ---------- --------- --------
-  in    25.5673    24.9975   28.8320    26.4656   2.0691
-  non   23.9804    26.7831   21.4662    24.0765   2.6598
-  et    22.7990    25.7911   24.2020    24.2640   1.4970
-  est   17.0155    18.0538   11.7152    15.5948   3.3997
+|     |   Gratian1 |   dePen |   Gratian2 |    mean |    std |
+|:----|-----------:|--------:|-----------:|--------:|-------:|
+| in  |    25.5673 | 24.9975 |    28.8320 | 26.4656 | 2.0691 |
+| non |    23.9804 | 26.7831 |    21.4662 | 24.0765 | 2.6598 |
+| et  |    22.7990 | 25.7911 |    24.2020 | 24.2640 | 1.4970 |
+| est |    17.0155 | 18.0538 |    11.7152 | 15.5948 | 3.3997 |
 
 As noted above, the definition of a value's z-score is the difference of
 that value from the mean divided by the standard deviation. A z-score
@@ -773,12 +773,12 @@ Gratian2:
 
     z_scores = (frequencies - means.values) / standard_deviations.values
 
-        Gratian0   Gratian1   dePen     Gratian2
-  ----- ---------- ---------- --------- ----------
-  in    -2.8702    -0.4342    -0.7095   1.1437
-  non   -6.5491    -0.0361    1.0176    -0.9814
-  et    -3.2375    -0.9786    1.0201    -0.0414
-  est   -3.5264    0.4179     0.7233    -1.1412
+|     |   Gratian0 |   Gratian1 |   dePen |   Gratian2 |
+|:----|-----------:|-----------:|--------:|-----------:|
+| in  |    -2.8702 |    -0.4342 | -0.7095 |     1.1437 |
+| non |    -6.5491 |    -0.0361 |  1.0176 |    -0.9814 |
+| et  |    -3.2375 |    -0.9786 |  1.0201 |    -0.0414 |
+| est |    -3.5264 |     0.4179 |  0.7233 |    -1.1412 |
 
 ![Figure 0b updated 15 May 2020](PNGs/Figure_0b.png)
 
@@ -859,16 +859,16 @@ values for the "constant" *k*. As the number of occurrences *b*
 increases, values of *k* for Gratian's *dicta* remain fairly stable,
 mostly falling between 10,000 and 11,000.
 
-  b   a      $$b^{2}$$   k
-  --- ------ ----------- -------
-  1   8028   1           8028
-  2   2462   4           9848
-  3   1135   9           10215
-  4   660    16          10560
-  5   423    25          10575
-  6   290    36          10440
-  7   225    49          11025
-  8   173    64          11072
+|   b |    a |   $b^2$ |     k |
+|----:|-----:|--------:|------:|
+|   1 | 8028 |       1 |  8028 |
+|   2 | 2462 |       4 |  9848 |
+|   3 | 1135 |       9 | 10215 |
+|   4 |  660 |      16 | 10560 |
+|   5 |  423 |      25 | 10575 |
+|   6 |  290 |      36 | 10440 |
+|   7 |  225 |      49 | 11025 |
+|   8 |  173 |      64 | 11072 |
 
 As this example suggests, the explanatory power of the formula
 $ab^{2} = k$ to characterize a word distribution is greatest for words
@@ -1102,12 +1102,12 @@ work of an unknown author:
 
     test = z_scores[[unknown]]
 
-        Gratian0
-  ----- ----------
-  in    -2.8702
-  non   -6.5491
-  et    -3.2375
-  est   -3.5264
+|     |   Gratian0 |
+|:----|-----------:|
+| in  |    -2.8702 |
+| non |    -6.5491 |
+| et  |    -3.2375 |
+| est |    -3.5264 |
 
 the other for the comparison samples Gratian1, dePen, and Gratian2,
 assumed for the purpose of this experiment to represent the work of
@@ -1115,12 +1115,12 @@ known authors:
 
     corpus = z_scores[samples]
 
-        Gratian1   dePen     Gratian2
-  ----- ---------- --------- ----------
-  in    -0.4342    -0.7095   1.1437
-  non   -0.0361    1.0176    -0.9814
-  et    -0.9786    1.0201    -0.0414
-  est   0.4179     0.7233    -1.1412
+|     |   Gratian1 |   dePen |   Gratian2 |
+|:----|-----------:|--------:|-----------:|
+| in  |    -0.4342 | -0.7095 |     1.1437 |
+| non |    -0.0361 |  1.0176 |    -0.9814 |
+| et  |    -0.9786 |  1.0201 |    -0.0414 |
+| est |     0.4179 |  0.7233 |    -1.1412 |
 
 The formula used to calculate Burrows's Delta is:
 
@@ -1141,12 +1141,12 @@ is -0.0361, so the absolute value of the difference recorded in the
 
     differences = (test.values - corpus).abs()
 
-        Gratian1   dePen    Gratian2
-  ----- ---------- -------- ----------
-  in    2.436      2.1606   4.0139
-  non   6.513      7.5667   5.5677
-  et    2.2589     4.2576   3.1961
-  est   3.9443     4.2497   2.3852
+|     |   Gratian1 |   dePen |   Gratian2 |
+|:----|-----------:|--------:|-----------:|
+| in  |     2.436  |  2.1606 |     4.0139 |
+| non |     6.513  |  7.5667 |     5.5677 |
+| et  |     2.2589 |  4.2576 |     3.1961 |
+| est |     3.9443 |  4.2497 |     2.3852 |
 
 Given the layout of the *differences* dataframe in which we have stored
 the intermediate results, the part of the formula we deferred dealing
@@ -1171,9 +1171,9 @@ another, like Manhattan.
 
     row = (differences.mean(axis = 0)).to_frame(unknown).transpose()
 
-             Gratian1   dePen    Gratian2
-  ---------- ---------- -------- ----------
-  Gratian0   3.788      4.5586   3.7907
+|          |   Gratian1 |   dePen |   Gratian2 |
+|:---------|-----------:|--------:|-----------:|
+| Gratian0 |      3.788 |  4.5586 |     3.7907 |
 
 The Gratian1 subcorpus is just slightly closer than the Gratian2
 subcorpus to the unknown Gratian0 test case, with values of Delta for
@@ -1203,9 +1203,9 @@ statements demonstrates the kinds of results to be expected from
 Burrows's Delta in a situation in which an attribution of authorship can
 reasonably be ruled out.
 
-          Gratian1   dePen    Gratian2
-  ------- ---------- -------- ----------
-  psAug   2.6456     1.7373   3.4318
+|       |   Gratian1 |   dePen |   Gratian2 |
+|:------|-----------:|--------:|-----------:|
+| psAug |     2.6456 |  1.7373 |     3.4318 |
 
 The third experiment extends the first by treating each of the
 subcorpora, Gratian0, Gratian1, dePen, and Gratian2 sequentially as the
@@ -1238,12 +1238,12 @@ multiple authors at work within the corpus.
         row = (differences.mean(axis = 0)).to_frame(unknown).transpose()
         deltas = deltas.append(row)
 
-             Gratian0   Gratian1   dePen    Gratian2
-  ---------- ---------- ---------- -------- ----------
-  Gratian0   nan        3.788      4.5586   3.7907
-  Gratian1   1.4361     nan        0.3628   0.5453
-  dePen      1.9873     0.4515     nan      0.7673
-  Gratian2   1.7185     0.6278     0.7905   nan
+|          |   Gratian0 |   Gratian1 |    dePen |   Gratian2 |
+|:---------|-----------:|-----------:|---------:|-----------:|
+| Gratian0 |   nan      |     3.788  |   4.5586 |     3.7907 |
+| Gratian1 |     1.4361 |   nan      |   0.3628 |     0.5453 |
+| dePen    |     1.9873 |     0.4515 | nan      |     0.7673 |
+| Gratian2 |     1.7185 |     0.6278 |   0.7905 |   nan      |
 
 Considering the results of the first three experiments together, we can
 start to form some very preliminary conclusions. Based on the values for
@@ -1275,37 +1275,39 @@ to that of the experiments carried out by John Burrows and David Hoover,
 the pioneers of the technique, but makes it impractical to show
 intermediate results at every step in the process.
 
-              cases    laws       orders1   orders2   simony     procedure   other1
-  ----------- -------- ---------- --------- --------- ---------- ----------- --------
-  cases       nan      2.2765     1.9247    2.0252    1.9637     1.9545      1.5714
-  laws        2.141    nan        1.249     1.502     1.4633     1.3147      1.4223
-  orders1     1.6184   1.0949     nan       1.1223    0.9685     0.8843      1.0499
-  orders2     1.8982   1.5244     1.2686    nan       1.382      1.684       1.4149
-  simony      1.6667   1.3491     0.9772    1.2195    nan        0.8878      1.1304
-  procedure   1.6187   1.1991     0.892     1.5095    0.8789     nan         1.079
-  other1      1.3353   1.3        1.0619    1.2722    1.1383     1.0753      nan
-  other2      1.9416   1.3233     1.0913    1.6291    1.1386     1.109       1.2963
-  monastic    1.4555   1.0451     0.8554    1.2676    1.0114     0.7986      0.93
-  other3      2.0705   1.3388     1.289     1.5146    1.1997     1.1057      1.3497
-  heresy      1.5177   1.031      0.7772    1.2182    0.5544     0.595       0.9485
-  marriage    1.5448   1.0263     0.9848    1.265     0.884      0.9667      1.0494
-  penance     1.5371   1.4473     0.7478    1.4005    0.9024     0.8781      1.3077
-  second      1.374    1.0852     0.7764    1.1717    1.0623     0.9634      0.7971
-              other2   monastic   other3    heresy    marriage   penance     second
-  cases       2.2782   1.7622     2.3628    1.8717    1.8923     1.8589      1.6334
-  laws        1.4369   1.1931     1.4345    1.1875    1.1924     1.6218      1.2323
-  orders1     1.1109   0.8693     1.2397    0.8267    1.0124     0.7505      0.7777
-  orders2     1.6873   1.4492     1.6208    1.4198    1.4526     1.5523      1.3195
-  simony      1.1287   1.0413     1.1711    0.59      0.9166     0.9059      1.0863
-  procedure   1.1223   0.821      1.0726    0.6569    0.9993     0.8818      0.9852
-  other1      1.2792   0.9649     1.3054    0.996     1.0853     1.3272      0.8152
-  other2      nan      0.7979     1.0346    1.0592    0.654      0.8633      1.0961
-  monastic    0.7429   nan        1.0578    0.7602    0.6611     0.7999      0.7799
-  other3      0.9505   1.1229     nan       1.1209    0.7121     1.1521      1.3067
-  heresy      0.9839   0.7672     1.1395    nan       0.7783     0.6756      0.8484
-  marriage    0.6126   0.6577     0.6552    0.7672    nan        0.7974      0.8676
-  penance     0.9152   0.8101     1.0992    0.7609    0.8146     nan         0.9026
-  second      1.0674   0.7861     1.2408    0.877     0.8796     0.8927      nan
+|           |    cases |     laws |   orders1 |   orders2 |   simony |   procedure |   other1 |
+|:----------|---------:|---------:|----------:|----------:|---------:|------------:|---------:|
+| cases     | nan      |   2.2765 |    1.9247 |    2.0252 |   1.9637 |      1.9545 |   1.5714 |
+| laws      |   2.141  | nan      |    1.249  |    1.502  |   1.4633 |      1.3147 |   1.4223 |
+| orders1   |   1.6184 |   1.0949 |  nan      |    1.1223 |   0.9685 |      0.8843 |   1.0499 |
+| orders2   |   1.8982 |   1.5244 |    1.2686 |  nan      |   1.382  |      1.684  |   1.4149 |
+| simony    |   1.6667 |   1.3491 |    0.9772 |    1.2195 | nan      |      0.8878 |   1.1304 |
+| procedure |   1.6187 |   1.1991 |    0.892  |    1.5095 |   0.8789 |    nan      |   1.079  |
+| other1    |   1.3353 |   1.3    |    1.0619 |    1.2722 |   1.1383 |      1.0753 | nan      |
+| other2    |   1.9416 |   1.3233 |    1.0913 |    1.6291 |   1.1386 |      1.109  |   1.2963 |
+| monastic  |   1.4555 |   1.0451 |    0.8554 |    1.2676 |   1.0114 |      0.7986 |   0.93   |
+| other3    |   2.0705 |   1.3388 |    1.289  |    1.5146 |   1.1997 |      1.1057 |   1.3497 |
+| heresy    |   1.5177 |   1.031  |    0.7772 |    1.2182 |   0.5544 |      0.595  |   0.9485 |
+| marriage  |   1.5448 |   1.0263 |    0.9848 |    1.265  |   0.884  |      0.9667 |   1.0494 |
+| penance   |   1.5371 |   1.4473 |    0.7478 |    1.4005 |   0.9024 |      0.8781 |   1.3077 |
+| second    |   1.374  |   1.0852 |    0.7764 |    1.1717 |   1.0623 |      0.9634 |   0.7971 |
+
+|           |   other2 |   monastic |   other3 |   heresy |   marriage |   penance |   second |
+|:----------|---------:|-----------:|---------:|---------:|-----------:|----------:|---------:|
+| cases     |   2.2782 |     1.7622 |   2.3628 |   1.8717 |     1.8923 |    1.8589 |   1.6334 |
+| laws      |   1.4369 |     1.1931 |   1.4345 |   1.1875 |     1.1924 |    1.6218 |   1.2323 |
+| orders1   |   1.1109 |     0.8693 |   1.2397 |   0.8267 |     1.0124 |    0.7505 |   0.7777 |
+| orders2   |   1.6873 |     1.4492 |   1.6208 |   1.4198 |     1.4526 |    1.5523 |   1.3195 |
+| simony    |   1.1287 |     1.0413 |   1.1711 |   0.59   |     0.9166 |    0.9059 |   1.0863 |
+| procedure |   1.1223 |     0.821  |   1.0726 |   0.6569 |     0.9993 |    0.8818 |   0.9852 |
+| other1    |   1.2792 |     0.9649 |   1.3054 |   0.996  |     1.0853 |    1.3272 |   0.8152 |
+| other2    | nan      |     0.7979 |   1.0346 |   1.0592 |     0.654  |    0.8633 |   1.0961 |
+| monastic  |   0.7429 |   nan      |   1.0578 |   0.7602 |     0.6611 |    0.7999 |   0.7799 |
+| other3    |   0.9505 |     1.1229 | nan      |   1.1209 |     0.7121 |    1.1521 |   1.3067 |
+| heresy    |   0.9839 |     0.7672 |   1.1395 | nan      |     0.7783 |    0.6756 |   0.8484 |
+| marriage  |   0.6126 |     0.6577 |   0.6552 |   0.7672 |   nan      |    0.7974 |   0.8676 |
+| penance   |   0.9152 |     0.8101 |   1.0992 |   0.7609 |     0.8146 |  nan      |   0.9026 |
+| second    |   1.0674 |     0.7861 |   1.2408 |   0.877  |     0.8796 |    0.8927 | nan      |
 
 [^1]: Stephan Kuttner, "Research on Gratian: Acta and Agenda," in
     *Studies in the History of Medieval Canon Law*, Collected Studies
