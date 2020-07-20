@@ -106,9 +106,7 @@ Adair's findings by conducting a stylometric analysis of the frequencies
 of 70 function words to compare the 12 disputed numbers with numbers
 securely attributed to Hamilton and Madison.[@mosteller_inference_1964]
 
-![Federalist](media/image1.jpg){width="6.5in" height="6.5in"}
-
-Federalist
+![Federalist](JPGs/Federalist_CA_72_MFWs.jpg)
 
 ### Definition of first- and second-recension *dicta*
 
@@ -149,19 +147,19 @@ first-recension *dicta* as defined by Winroth's appendix from the text
 in the Friedberg edition. This definition is implemented by passing
 sequentially through the *dicta* and applying the following three rules:
 
--   If a *dictum* is listed in Winroth's appendix as being in the first
++   If a *dictum* is listed in Winroth's appendix as being in the first
     recension of the *Decretum*, and as not having been added to or
     changed in the second recension, the text for that *dictum* is
     included in the first recension sample. This rule is applied on a
     per-*dictum* basis.
 
--   If a *dictum* is in the text of the Friedberg edition, and is not
++   If a *dictum* is in the text of the Friedberg edition, and is not
     listed in Winroth's appendix as being in the first recension, in
     either unmodified or modified form, the text for that *dictum* is
     included in the second recension sample. This rule is applied on a
     per-*dictum* basis.
 
--   If a *dictum* is listed Winroth's appendix as being in the first
++   If a *dictum* is listed Winroth's appendix as being in the first
     recension, but as having been added to or changed in the second
     recension, those words indicated by the appendix are included in the
     first recension sample, while those words in the text of Friedberg
@@ -281,7 +279,7 @@ reconstructed through an editorial process quite similar to preparing a
 critical edition to restore it to a state as close as possible to what
 Reuter and Silagi presumably intended.
 
-In 1946, Father Roberto Busa, SJ (d. 2011), began work on what
+In 1946, Father Roberto Busa, SJ (d.2011), began work on what
 ultimately became the *Index Thomisticus*, a concordance of the works of
 St Thomas Aquinas. In 1949, Father Busa secured crucial support from
 Thomas J. Watson of IBM, allowing concordance generation to be carried
@@ -648,10 +646,7 @@ represents the mean of means for the horizontal (*in*) axis, and the
 horizontal dashed line represents the mean of means for the vertical
 (*non*) axis.
 
-![Figure 0a updated 14 May 2020](media/image2.png){width="6.5in"
-height="3.8999989063867018in"}
-
-Figure 0a updated 14 May 2020[^25]
+![Figure 0a updated 14 May 2020[^25]](PNGs/Figure_0a.png)
 
 Figure 0a introduces several conventions common to two-dimensional
 graphical representations of word frequency data that readers will
@@ -785,10 +780,7 @@ Gratian2:
   et    -3.2375    -0.9786    1.0201    -0.0414
   est   -3.5264    0.4179     0.7233    -1.1412
 
-![Figure 0b updated 15 May 2020](media/image3.png){width="6.5in"
-height="3.8999989063867018in"}
-
-Figure 0b updated 15 May 2020
+![Figure 0b updated 15 May 2020](PNGs/Figure_0b.png)
 
 Labels on the axes of Figure 0b refer to standard deviations (values of
 z) away from the mean of means (represented by the dashed lines).
@@ -850,11 +842,7 @@ should be one half that of the most frequent word, the frequency of the
 third most frequent word should be one third that of the most frequent
 word, and so on. (See Figure Za below.)
 
-![Figure Za updated 27 May
-2020](media/image4.png){width="6.421404199475066in"
-height="4.816053149606299in"}
-
-Figure Za updated 27 May 2020
+![Figure Za updated 27 May 2020](PNGs/Figure_Za.png)
 
 Zipf tried several different approaches to the quantitative analysis of
 the distribution of words in corpora. His initial attempt, in 1935,
@@ -932,11 +920,7 @@ distribution of word frequencies in Figure Zb, and -0.6518 for the
 actual frequencies of the thirty most frequent words in Gratian's
 *dicta* in Figure Zd.
 
-![Figure Zb updated 27 May
-2020](media/image5.png){width="6.421404199475066in"
-height="4.816053149606299in"}
-
-Figure Zb updated 27 May 2020
+![Figure Zb updated 27 May 2020](PNGs/Figure_Zb.png)
 
 Figure Zc below plots the actual rank-frequency distribution of the
 thirty most frequent words (MFWs) in Gratian's *dicta*: *in* (2187),
@@ -947,10 +931,7 @@ thirty most frequent words (MFWs) in Gratian's *dicta*: *in* (2187),
 (391), *ait* (349), *esse* (339), *ergo* (338), *quia* (336), *item*
 (327), *per* (304), *nec* (293).
 
-![Figure Zc updated 27 May 2020](media/image6.png){width="6.5in"
-height="4.333333333333333in"}
-
-Figure Zc updated 27 May 2020
+![Figure Zc updated 27 May 2020](PNGs/Figure_Zc.png)
 
 Zipf used word frequencies hand-tabulated from James Joyce's *Ulysses*
 as the data set for his exploration of the rank-frequency relationship,
@@ -973,31 +954,15 @@ that result back into the linear (as opposed to logarithmic) frame of
 reference used in Figure Zc, the expression 1/r ^0.6518^ yields a better
 (though not perfect) fit to the actual rank-frequency data.
 
-![Figure Zd updated 27 May
-2020](media/image7.png){width="6.421404199475066in"
-height="4.816053149606299in"}
-
-Figure Zd updated 27 May 2020
+![Figure Zd updated 27 May 2020](PNGs/Figure_Zd.png)
 
 ### Zipf's law (appendix)
 
-![Figure Ze updated 27 May
-2020](media/image8.png){width="6.421404199475066in"
-height="4.816053149606299in"}
+![Figure Ze updated 27 May 2020](PNGs/Figure_Ze.png)
 
-Figure Ze updated 27 May 2020
+![Figure Zy updated 27 May 2020](PNGs/Figure_Zy.png)
 
-![Figure Zy updated 27 May
-2020](media/image9.png){width="6.421404199475066in"
-height="5.618728127734033in"}
-
-Figure Zy updated 27 May 2020
-
-![Figure Zz updated 27 May
-2020](media/image10.png){width="6.421404199475066in"
-height="5.618728127734033in"}
-
-Figure Zz updated 27 May 2020[^33]
+![Figure Zz updated 27 May 2020[^33]](PNGs/Figure_Zz.png)
 
 ### Burrows's Delta
 
